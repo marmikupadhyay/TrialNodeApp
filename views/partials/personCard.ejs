@@ -1,0 +1,23 @@
+<div class="card person">
+  <img
+    src="/imgs/profilePhoto-<%=matchuser._id%>.png"
+    alt="User Has No Photo"
+    class="card-img-top"
+  />
+  <div class="card-body">
+    <h2 class="card-title"><%=matchuser.name%></h2>
+    <p class="card-text">Some Text</p>
+    <% if(flag2) { %>
+    <p>Phone : <%=matchuser.phone%></p>
+    <% } %> <% if(!flag){ %>
+    <a href="/users/addMatch/<%=matchuser._id%>" class="btn btn-success"
+      >Accept</a
+    >
+    <a
+      href="/users/removeMatch/<%=matchuser._id%>"
+      class="btn btn-danger right mr-3"
+      >Reject</a
+    >
+    <% } %>
+  </div>
+</div>

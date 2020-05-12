@@ -1,0 +1,31 @@
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+/>
+<link rel="stylesheet" href="/css/profile.css" />
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <ul>
+    <li class="left"><a href="/dashboard">Home</a></li>
+    <li class="left"><a href="/users/editProfile">Profile</a></li>
+    <li class="left"><a href="/users/matches">Match-Made</a></li>
+    <li class="right"><a href="/users/logout">Logout</a></li>
+  </ul>
+</nav>
+
+<section class="sec-1 row">
+  <%- include('./partials/sideBar.ejs'); %>
+  <div class="col-9 bg-light pl-0">
+    <div class="jumbotron p-3 mb-0">
+      <h1 class="display-2">Edit Profile</h1>
+      <%- include('./partials/messages.ejs'); %>
+      <form action="/users/upload" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="">Upload Profile Photo</label>
+          <input type="file" name="profilePhoto" class="form-control" />
+        </div>
+        <button class="btn btn-info" type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+</section>

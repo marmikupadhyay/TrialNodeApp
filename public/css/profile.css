@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.col-1 {
+  all: unset;
+  width: 8.33%;
+}
+.col-2 {
+  all: initial;
+  width: 16.66%;
+}
+.col-3 {
+  all: unset;
+  width: 25%;
+}
+.col-4 {
+  all: unset;
+  width: 33.33%;
+}
+.col-5 {
+  all: unset;
+
+  width: 41.66%;
+}
+.col-6 {
+  all: unset;
+  width: 50%;
+}
+.col-7 {
+  all: unset;
+  width: 58.33%;
+}
+.col-8 {
+  all: unset;
+  width: 66.66%;
+}
+.col-9 {
+  all: unset;
+  width: 75%;
+  box-sizing: border-box;
+}
+.col-10 {
+  all: unset;
+  width: 83.33%;
+}
+.col-11 {
+  all: unset;
+  width: 91.33%;
+}
+.col-12 {
+  all: unset;
+  width: 100%;
+}
+
+.col-8,
+.col-4 {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper .col-8 {
+  position: fixed;
+}
+
+.wrapper .banner {
+  height: 100%;
+  content: " ";
+  background: url(images/white-cherry-blossom-flowers-3820994.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+.col-6 {
+  box-sizing: border-box;
+}
+#login {
+  margin-left: 66.66%;
+}
+.col-4 {
+  display: flex;
+  flex-direction: column;
+}
+.col-4 .head {
+  min-width: 100%;
+  margin: 0;
+}
+.wrapper .col-4 {
+  position: relative;
+}
+.col-4 .wrap {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hidden {
+  display: none;
+}
+.navbar {
+  height: 8vh;
+}
+.navbar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  position: relative;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  font-size: 1.4em;
+}
+.navbar ul li:hover {
+  border-bottom: 2px solid white;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+
+.right {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.sec-1 {
+  margin-top: 8vh;
+}
+
+.sec-1 .col-3 {
+  position: fixed;
+  display: flex;
+  height: 92vh;
+}
+.sec-1 .col-9 {
+  margin-left: 25%;
+}
+.jumbotron {
+  overflow-y: auto;
+}
+.card {
+  width: 100%;
+}
+.card img {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.post-body {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.sec-1 .form-container {
+  width: 100%;
+}
+.sec-1 .form-container form {
+  width: 70%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.match-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* min-height: 50%; */
+  overflow-y: auto;
+}
+
+.person {
+  width: 30%;
+  /* max-height: 100vh; */
+  margin: 10px auto;
+}

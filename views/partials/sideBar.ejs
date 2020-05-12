@@ -1,0 +1,17 @@
+<div class="col-3 bg-secondary pr-0">
+  <div class="card m-4 rounded-0">
+    <img
+      src="/imgs/profilePhoto-<%=user._id%>.png"
+      alt="Upload Image First"
+      class="card-img-top"
+    />
+    <div class="card-body">
+      <h1 class="card-title"><%= user.name %></h1>
+      <p class="card-text">
+        Gender : <%= user.gender?'Female':'Male'%>
+        <br />
+        Phone: <%= user.phone%>
+      </p>
+    </div>
+  </div>
+</div>
